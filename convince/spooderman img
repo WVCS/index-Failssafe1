@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./image.css">
+    <link rel="icon" href="image.png">
+  </head>
+<body>
+  <nav>
+    <li class="navli"><a href="index.html"> Home </a></li>
+    <li class="navli"><a href="ANOTHER PAGE.html"> My Apps </a></li> 
+    <li class="navli"><a href="https://www.powayusd.com/schools/hs/wvhs/Calendars/Schedules/Bell-Schedule"> Westview </a></li>
+    <li class="navli"><a href="nounproject.html"> Noun Project </a></li>
+    <li class="navli"><a href="convince/spooderman.html"> Convince </a></li>
+  </nav>
+  <center>
+    <img src="image.png"
+  </center>
