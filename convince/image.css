@@ -36,6 +36,6 @@ table {
   width: 50%;
 }
 td:hover {
-  background-color: yellow;
+  background-color: maroon;
 }
 tr:nth-child(even) {background-color: #f2f2f2;}
