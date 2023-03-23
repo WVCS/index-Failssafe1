@@ -68,14 +68,13 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   }
 }
 @media (min-width: 1081px) {
-  body{
+ body {
     width: 100%;
     height: 100%;
-    background-image:url(https://3dcoil.grupopremo.com/wp-content/uploads/2017/09/Fotolia_163539926_Subscription_Monthly_M2-1293x461.png);
+    background-image:url(XR.png);
     background-size: cover;
     background-attachment:fixed;
     margin: 0;
     padding: 0;
-  }
 }
-
+}
