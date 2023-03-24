@@ -1,0 +1,71 @@
+nav {
+    list-style-type: none;
+    background-color: #333;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+  }
+  .navli {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 50px;
+  }
+  
+  li a:hover {
+    background-color: antiquewhite;
+    color: black;
+  }
+  
+  body {
+      width: 100%;
+      height: 100%;
+      background-image:url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/UD7CEz6/police-building-blue-sky-timelapse-blue-sky-timelapse_7j-vaerp_thumbnail-1080_01.png);
+      background-size: cover;
+      background-attachment:fixed;
+      margin: 0;
+      padding: 0;
+     }
+  
+  .wrapper {
+      display: grid;
+      color: white;
+      padding: 25px;
+      width: 95vw;
+      margin-left: -8px;
+      margin-top: -8px;
+      height: 700px;
+      grid-template:
+          "A B C
+           D E"
+      ;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+  }
+  
+  .A {
+      grid-area: 1 / 1 / 1 / 4;
+  }
+  
+  .B {
+      grid-area: 2 / 1 / 6 / 3;
+  }
+  
+  .C {
+    grid-area: 2 / 3 / 4 / 4;
+  }
+  
+  .D {
+    grid-area: 4 / 3 / 6 / 4;
+  }
+  
+  .E {
+    grid-area: 6 / 1 / 6 / 4;
+  }
