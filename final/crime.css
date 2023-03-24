@@ -66,8 +66,6 @@ body {
 }
 
 .C {
-  max-width: 98.6;
-  size: fixed;
   border: groove silver 5px;
   grid-area: 2 / 3 / 4 / 4;
   background: gray;
