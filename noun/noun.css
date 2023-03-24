@@ -36,18 +36,6 @@ td:hover {
 }
 tr:nth-child(even) {background-color: #f2f2f2;}
 
-.nav {
-  display: inline;
-  float: right;
-  padding: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: salmon;
-  font-size: 120%;
-}
-
 body {
   background-color: silver;
 }
