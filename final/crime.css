@@ -25,47 +25,76 @@ nav {
   }
   
   body {
-      width: 100%;
-      height: 100%;
-      background-image:url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/UD7CEz6/police-building-blue-sky-timelapse-blue-sky-timelapse_7j-vaerp_thumbnail-1080_01.png);
-      background-size: cover;
-      background-attachment:fixed;
-      margin: 0;
-      padding: 0;
-     }
+    width: 100%;
+    height: 100%;
+    background-image:url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/UD7CEz6/police-building-blue-sky-timelapse-blue-sky-timelapse_7j-vaerp_thumbnail-1080_01.png);
+    background-size: cover;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+  }
   
   .wrapper {
-      display: grid;
-      color: white;
-      padding: 25px;
-      width: 95vw;
-      margin-left: -8px;
-      margin-top: -8px;
-      height: 700px;
-      grid-template:
+    display: grid;
+    color: white;
+    padding: 40px;
+    width: 95vw;
+    margin-left: -8px;
+    margin-top: 10px;
+    height: 700px;
+    grid-template:
           "A B C
            D E"
       ;
-      grid-row-gap: 10px;
-      grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
   }
   
   .A {
-      grid-area: 1 / 1 / 1 / 4;
+    border: groove silver 5px;
+    grid-area: 1 / 1 / 1 / 4;
   }
   
   .B {
-      grid-area: 2 / 1 / 6 / 3;
+    border: groove silver 5px;
+    grid-area: 2 / 1 / 6 / 3;
+    size: fixed;
+    max-width: 99%;
   }
   
   .C {
+    max-width: 98.6;
+    size: fixed;
+    border: groove silver 5px;
     grid-area: 2 / 3 / 4 / 4;
   }
   
   .D {
+    border: groove silver 5px;
     grid-area: 4 / 3 / 6 / 4;
   }
   
   .E {
+    border: groove silver 5px;
     grid-area: 6 / 1 / 6 / 4;
+  }
+  
+  .A:hover{
+    border: ridge silver 5px;
+  }
+  
+  .B:hover{
+    border: ridge silver 5px;
+  }
+  
+  .C:hover{
+    border: ridge silver 5px;
+  }
+  
+  .D:hover{
+    border: ridge silver 5px;
+  }
+  
+  .E:hover{
+    border: ridge silver 5px;
   }
