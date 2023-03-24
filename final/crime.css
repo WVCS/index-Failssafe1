@@ -43,9 +43,8 @@ body {
   margin-top: 10px;
   height: 700px;
   grid-template:
-        "A B C
-         D E"
-    ;
+        "A B C"
+         "D E";
   grid-row-gap: 10px;
   grid-column-gap: 10px;
 }
@@ -53,7 +52,8 @@ body {
 .A {
   border: groove silver 5px;
   grid-area: 1 / 1 / 1 / 4;
-  background: gray;
+  font-size: 120px;
+  font-weight: bold;
 }
 
 .B {
@@ -71,6 +71,7 @@ body {
   border: groove silver 5px;
   grid-area: 2 / 3 / 4 / 4;
   background: gray;
+  font-size: 140%;
 }
 
 .D {
@@ -81,6 +82,7 @@ body {
 
 .A:hover{
   border: ridge silver 5px;
+  font-size: 120.1px;
 }
 
 .B:hover{
@@ -124,4 +126,30 @@ body {
   max-width: 100%;
   border-radius: 50%;
   margin-bottom: 10px;
+}
+
+#grad1{
+  background-image: linear-gradient(to bottom right, white, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*phones*/
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+    line-height: 1.2;
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+/*iPads*/
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0;
+  }
 }
