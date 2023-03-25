@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Barry's Burgers - Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="./assets/Burger.png">
+    <link rel="stylesheet" type="text/css" href="./food/contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <header>
+    <div class="container">
+      <h1>Barry's Burgers</h1>
+      <nav>
+        <ul>
+          <li><a href="burger.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Address</h3>
+          <p>8849 Villa La Jolla Dr Ste 305<br>La Jolla, CA 92037</p>
+        </div>
+
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <h3>Phone</h3>
+          <p>(858) 213-9847</p>
+        </div>
+
+        <div class="contact-item">
+          <i class="far fa-envelope"></i>
+          <h3>Email</h3>
+          <p>info.b@barryburger.com</p>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="footer-text">Copyright © Barry's Burgers.
+        All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
