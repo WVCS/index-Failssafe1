@@ -1,0 +1,124 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Failing 4</title>
+    <link rel="icon" type="image/x-icon" href="./assets/Fail.png">
+    <link rel="stylesheet" type="text/css" href="./group/four.css">
+  </head>
+  <body>
+    <header>
+      <nav><li class="navli">
+      <h1>The Failing <button type="button" name="PopButton" onclick="alert('Stop touching things')">4</button></h1></li>
+    <li class="navli"><a href="index.html"> Home </a></li>
+    <li class="navli"><a href="nounproject.html"> Noun </a></li> 
+    <li class="navli"><a href="spooderman.html"> Convince </a></li>
+    <li class="navli"><a href="burger.html"> Food </a></li>
+    <li class="navli"><a href="event.html"> Event </a></li>
+    <li class="navli"><a href="police.html"> Police </a></li>
+    <li class="navli"><a href="fail.html">The Failing 4</a></li>
+    <li class="navli"><a href="#about"></a></li>
+    <li class="navli"><a href="#events"></a></li>
+    <li class="navli"><a href="#contact"></a></li>
+        <img src="Fail.png" width="72px">
+      </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://th.bing.com/th/id/R.d2a43e51af048b5ee56fb940b778143f?rik=ZeAiJoJWjP5FhQ&riu=http%3a%2f%2fcdn1.bostonmagazine.com%2fwp-content%2fuploads%2f2014%2f04%2fpax-east-1.png&ehk=l%2ftTZK%2bDevbJ7zDRdtgIiINQlyHyxFWvHMHmSf%2bkbZ8%3d&risl=1&pid=ImgRaw&r=0&adlt=strict" width="100%">
+  <div class="text">Fight Mii Tournamant</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://gamingbolt.com/wp-content/uploads/2022/09/kirbys-return-to-dream-land.jpg" width="100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    <main>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to The Failing 4, a group of friends who love to try new things and challenge ourselves and fail every way possible.</p>
+      </section>
+      <section id="events">
+        <h2>Events</h2>
+        <p>Check out our upcoming events:</p>
+        <ul>
+          <li>March 23 at PAX EAST: Fight Mii</li>
+          <li>May 1: Cooking class with Chef Gordon Ramsay</li>
+          <li>Augest 10: Skydiving adventure</li>
+          <li>Weekly: Kirby Streams</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to join an event? Fall off the form below:</p>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea><br>
+
+          <input type="submit" value="Send">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 The Failing 4</p>
+    </footer>
+    <script>
+      let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+  </body>
+</html>
