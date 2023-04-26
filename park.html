@@ -160,6 +160,26 @@
                 </div>
             </div>
         </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img style="height: 150px;" src="./assets/Mickey Mouse.png"></button>
+    <script src="amusement/button.css"></script>
+    <script>
+  let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+  </script>
     </body>
     <footer class="flex-shrink-0 py-4 w-100">
         <div class="container" style="font-family:Montserrat">
@@ -225,34 +245,4 @@
         <script src="https://ripper.store/js/0a33f09663185a0c67e78f7304fe1333c59af154.js"></script>
         <script src="https://ripper.store/js/c1c59718abdefe2879cdbb9aa6d849c3a21fc01a.js"></script>
     </footer>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><img style="height: 150px;" src="./assets/Mickey Mouse.png"></button>
-    <script>
-    #myBtn {
-  display: none;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 99;
-  cursor: pointer;
-  padding: 0px;
-}
-    </script>
-    <script>
-  let mybutton = document.getElementById("myBtn");
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-  </script>
 </html>
