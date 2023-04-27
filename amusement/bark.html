@@ -5,5 +5,194 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <link rel="stylesheet" type="text/css" href="./disney.css">
     </head>
-        
+    <header class="py-3 site-navbar" role="banner">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-6 col-xl-2">
+                    <h1 class="mb-0">
+                        <a href="#" class="mb-0 h2 logo" style="font-family:Montserrat;font-weight:400">Disney Earth</a>
+                    </h1>
+                </div>
+                <div class="d-none col-10 col-md-8 d-xl-block">
+                    <nav class="text-right position-relative site-navigation text-lg-center" role="navigation">
+                        <ul class="d-none d-lg-block js-clone-nav mx-auto nav site-menu">
+                            <li>
+                                <a href="bark.html">Home</a>
+                            </li>
+                            <li class="has-children">
+                                <a>Browse</a>
+                                <ul class="dropdown">
+                                    <li><a href="">Parks & Tickets</a></li>
+                                    <li><a href="">Places to Stay</a></li>
+                                    <li><a href="">Things to Do</a></li>
+                                    <li><a href="">Magic Key</a></li>
+                                    <li><a href="">Shop</a></li>
+                                    <li><a href="">Cart</a></li>
+                                    <li><a href="">My Disney Experience</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./DEfaq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="./DElogin.html">Create Account</a>
+                            </li>
+                            <li class="has-children">
+                                <a>Other Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="../home/index.html">Home</a></li>
+                                    <li><a href="../noun/nounproject.html">Noun</a></li>
+                                    <li><a href="../convince/spooderman.html">Convince</a></li>
+                                    <li><a href="../food/burger.html">Food</a></li>
+                                    <li><a href="../event/event.html">Event</a></li>
+                                    <li><a href="../final/police.html">Police</a></li>
+                                    <li><a href="../group/fail.html">The Failing 4</a></li>
+                                    <li><a href="bark.html">Disney Earth</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="text-right col-6 col-xl-2">
+                    <style>
+                        .slow .toggle-group {
+                            transition: left 1s;
+                            -webkit-transition: left 1s
+                        }
+                    </style>
+                    <input data-off="Switch to Dark" data-on="Switch to Light" data-onstyle="default" data-size="small" data-style="slow" data-toggle="toggle" id="toggle-event" type="checkbox">
+                    <br>
+                    <div class="d-none d-xl-inline-block">
+                        <ul class="mb-0 d-flex js-clone-nav list-unstyled ml-auto site-menu text-right" data-class="social">
+                            <li>
+                                <a href="https://disneytermsofuse.com/" class="pr-3 pl-0">
+                                    <i class="bi bi-chat-square-text-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://discord.com/invite/disney" class="pr-3 pl-2">
+                                    <i class="bi bi-discord"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@Disney" class="pr-3 pl-2">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="position-relative d-inline-block d-xl-none ml-md-0 mr-auto">
+                        <a href="#" class="js-menu-toggle site-menu-toggle text-black">
+                            <span class="bi bi-list h3"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+<body class="stop-transition">
+    <div class="container-fluid">
+        <div class="images-carousel swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="image-wrap">
+                        <div class="image-info">
+                            <h2 class="mb-3">Ticket & reservations</h2>
+                            <a href="#" class="btn btn-outline-white px-4 py-2">Theme Park Details</a>
+                        </div>
+                        <video alt="avatars" autoplay class="img-fluid" loop muted playsinline src="https://dvcreservations.com/images/slinky-ticket.gif"></video>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrap">
+                        <div class="image-info">
+                            <h2 class="mb-3"></h2>
+                            <a class="btn btn-outline-white px-4 py-2">Get a World</a>
+                        </div>
+                        <video alt="worlds" autoplay class="img-fluid" loop muted playsinline src="https://cdn1.parksmedia.wdprapps.disney.com/vision-dam/digital/parks-platform/parks-global-assets/disneyland/events/d100/video/disneyland-resort-D100-DIQB3046103H-video-1280x720.mp4"></video>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrap">
+                        <div class="image-info">
+                            <h2 class="mb-3">Animations</h2>
+                            <a class="btn btn-outline-white px-4 py-2">Get Animations</a>
+                        </div>
+                        <video alt="animations" autoplay class="img-fluid" loop muted playsinline src="./img/animations.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img style="height: 150px;" src="">Top</button>
+
+<script>
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+<script type="text/javascript" src="1.js"></script>
+</body>
+<footer class="flex-shrink-0 py-4 w-100">
+    <div class="container" style="font-family:Montserrat">
+        <hr>
+        <div class="row gx-5 gy-3">
+            <div class="col-md-6 col-lg-2"></div>
+            <div class="col-md-6 col-lg-4">
+                <h5 class="text h1"></h5>
+                <p class="small text-muted">DisneyEarth. If you can dream it, you can do it.</p>
+                <p class="small text-muted mb-0">
+                    All rights reserved - <a href="./bark.html" class="text-primary">Disney.Failssafe</a>
+                </p>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <h5 class="small text">Pages</h5>
+                <ul class="small list-unstyled">
+                    <li><a href="#">Parks & Tickets</a></li>
+                    <li><a href="#">Places to Stay</a></li>
+                    <li><a href="#">Things to Do</a></li>
+                    <li><a href="#">Magic Key</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">My Disney Experience</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <h5 class="small text">Other Sites</h5>
+                <ul class="small list-unstyled">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../noun/nounproject.html">Noun</a></li>
+                    <li><a href="../convince/spooderman.html">Convince</a></li>
+                    <li><a href="../food/burger.html">Food</a></li>
+                    <li><a href="../event/event.html">Event</a></li>
+                    <li><a href="../final/police.html">Police</a></li>
+                    <li><a href="../group/fail.html">The Failing 4</a></li>
+                    <li><a href="bark.html">Disney Earth</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <link href="./color.css" rel="stylesheet" type="text/css">
+    <script src="2.js" async></script>
+    <script src="3.js"></script>
+    <script src="4.js"></script>
+    <script src="5.js" async></script>
+    <script src="6.js" async></script>
+    <script src="7.js"></script>
+    <script src="8.js"></script>
+</footer>
 </html>
