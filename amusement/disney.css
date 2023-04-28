@@ -71,6 +71,10 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     appearance: none
 }
 
+input[type=number] {
+    -moz-appearance: textfield
+}
+
 ::-webkit-scrollbar {
     display: none
 }
@@ -97,6 +101,8 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     left: 0;
     transition: left .35s;
     -webkit-transition: left .35s;
+    -moz-user-select: none;
+    -webkit-user-select: none
 }
 
 .toggle.off .toggle-group {
@@ -2183,6 +2189,7 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar {
     border-radius: 10px;
     position: relative;
+    -ms-touch-action: none;
     background: rgba(0,0,0,.1)
 }
 
@@ -2404,6 +2411,10 @@ button.swiper-pagination-bullet {
     z-index: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden
+}
+
+.swiper-container-coverflow .swiper-wrapper {
+    -ms-perspective: 1200px
 }
 
 #nprogress {
@@ -3830,6 +3841,7 @@ button.swiper-pagination-bullet {
     font-family: inherit;
     font-size: inherit;
     line-height: 1.5;
+    font-smoothing: inherit
 }
 
 .selectize-control.single .selectize-input.input-active,.selectize-input {
@@ -4020,6 +4032,7 @@ button.swiper-pagination-bullet {
     overflow-y: auto;
     overflow-x: hidden;
     max-height: 200px;
+    overflow-scrolling: touch
 }
 
 .selectize-dropdown-emptyoptionlabel {
@@ -4375,15 +4388,3 @@ button.swiper-pagination-bullet {
 .selectize-control.plugin-remove_button .disabled .item .remove {
     border-left-color: var(--color_input_background)
 }
-
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 0px;
-  }
