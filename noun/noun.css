@@ -151,9 +151,11 @@ body .footer .content > div .image {
 }
 
 canvas {
-  width: 2240px;
-  height: 1000px;
   position: absolute;
   top: 3%;
   left: 0%;
+  background-size: cover;
+  background-attachment:fixed;
+  margin: 0;
+  padding: 0;
         }
