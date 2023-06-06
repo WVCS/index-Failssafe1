@@ -1,23 +1,36 @@
-// https here is necesary for some features to work, even if this is going to be behind an SSL-providing reverse proxy.
-const https = require('https');
-const fs = require('fs');
-const path = require('path');
-const Corrosion = require('corrosion');
+"use strict";
+/**
+ * @type {HTMLFormElement}
+ */
+const form = document.getElementById("uv-form");
+/**
+ * @type {HTMLInputElement}
+ */
+const address = document.getElementById("uv-address");
+/**
+ * @type {HTMLInputElement}
+ */
+const searchEngine = document.getElementById("uv-search-engine");
+/**
+ * @type {HTMLParagraphElement}
+ */
+const error = document.getElementById("uv-error");
+/**
+ * @type {HTMLPreElement}
+ */
+const errorCode = document.getElementById("uv-error-code");
 
-// you are free to use self-signed certificates here, if you plan to route through an SSL-providing reverse proxy.
-const ssl = {
-    key: fs.readFileSync(path.join(__dirname, '/ssl.key')),
-    cert: fs.readFileSync(path.join(__dirname, '/ssl.cert')),
-};
-const server = https.createServer(ssl);
-const proxy = new Corrosion({
-    codec: 'xor', // apply basic xor encryption to url parameters in an effort to evade filters. Optional.
-    prefix: '/get/' // specify the endpoint (prefix). Optional.
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  try {
+    await registerSW();
+  } catch (err) {
+    error.textContent = "Failed to register service worker.";
+    errorCode.textContent = err.toString();
+    throw err;
+  }
+
+  const url = search(address.value, searchEngine.value);
+  location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
 });
-
-proxy.bundleScripts();
-
-server.on('request', (request, response) => {
-    if (request.url.startsWith(proxy.prefix)) return proxy.request(request, response);
-    response.end(fs.readFileSync(__dirname + '/index.html', 'utf-8'));
-}).on('upgrade', (clientRequest, clientSocket, clientHead) => proxy.upgrade(clientRequest, clientSocket, clientHead)).listen(8443); // port other than 443 if it is needed by other software.

@@ -1,22 +1,131 @@
-root@corrosion:~$ node index.js &; cpid=$!
-root@corrosion:~$ curl -k "https://localhost:8443/get/hvtrs8%2F-ezaopne%2Ccmm" 
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Web Proxy</title>
-...
-user@corrosion:~$ kill $cpid
-        <style>
-            body {
-                text-align: center;
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Failaviolet</title>
+    <meta
+      name="description"
+      content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
+    />
+    <meta
+      name="keywords"
+      content="proxy, web proxy, ultraviolet, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#434c5e"
+    />
+    <meta name="googlebot" content="index, follow, snippet" />
+    <link rel="shortcut icon" content="uv.png" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Ultraviolet (Web Proxy)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!"
             }
-        </style>
-    </head>
-    <body>
-        <form action="/get/gateway/" method="POST">
-            <input name="url" placeholder="Search the web">
-            <input type="submit" value="Go">
-        </form>
-        <br>
-        <iframe src="blob:https://kdata1.com/f57c6c22-d0c9-4024-b2e0-8afbfd13c2b1" style="width:1000px; height: 1000px;">
-    </body>
+          },
+          {
+            "@type": "Question",
+            "name": "How do I unblock sites using Ultraviolet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Simply head to an official site featuring Ultraviolet such as Holy Unblocker or Incognito! You can also self-host Ultraviolet on your own web server for maximum privacy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if Ultraviolet is blocked or not working?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Join the Titanium Network Discord at discord.gg/unblock!"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <div
+      title="Ultraviolet Logo"
+      class="flex-center logo-wrapper header-center"
+    >
+      <img class="logo" src="uv.png" alt="Ultraviolet" />
+      <h1>Failaviolet | Web Unblocker</h1>
+    </div>
+    <div class="flex-center desc">
+      <p>
+        To access the working URL, you must crack the password, think you can do it?
+
+        Failaviolet is bassed off of the highly sophisticated proxy used for evading internet
+        censorship called Ultraviolet. You can use it to bypass the scool/work restrictions and have fun ;)
+      </p>
+    </div>
+
+    <form class="flex-center" onsubmit="return troll(document.getElementById('password-IN').value);" action="#">
+      <input id="password-IN" class="fake-uv-address" type="password" placeholder="What's the Password">
+      <input class="fake-uv-address" style="width: 50px; margin-left: 10px" type="submit" value="GO">
+    </form>
+    
+    <div class="desc left-margin">
+      <p id="uv-error"></p>
+      <pre id="uv-error-code"></pre>
+    </div>
+    <footer>
+      <a
+        title="My Webiste"
+        href="https://spotech.dev"
+        >Spotech.dev</a
+      >
+      <a
+        title="My GitHub"
+        href="https://github.com/SpotechYT"
+        >GitHub</a
+      >
+      <form id="uv-form" class="flex-center">
+        <input
+          id="uv-search-engine"
+          value="https://www.google.com/search?q=%s"
+          type="hidden"
+        />
+        <input id="uv-address" type="text" placeholder="Nice, You found the Password!">
+      </form>
+    </footer>
+  </body>
+  <script>
+    const CryptoJS = require('crypto-js');
+    const encrypt = (text) => {
+      return CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(text));
+    };
+    const decrypt = (data) => {
+      return CryptoJS.enc.Base64.parse(data).toString(CryptoJS.enc.Utf8);
+    };
+
+    function troll(Password) {
+        if(Password == encrypt("DQD7YLgNTHjGwCH82dZ6xJv3")){
+          document.getElementById('uv-address').style.visibility = "visible";
+        }
+        else {
+          window.alert("Wrong lol => " + encrypt(Password));
+          console.log(encrypt(Password));
+        }
+    }
+  </script>
 </html>
