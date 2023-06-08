@@ -159,3 +159,26 @@ canvas {
   margin: 0;
   padding: 0;
         }
+/*big screen*/
+@media (min-width: 743px) {
+    body *:not(.hide) {
+  opacity: 1;
+}
+  .hide > * {
+  opacity: 1 !important;
+}
+  
+}
+/*small screen*/
+@media (max-width: 742px) {
+    body *:not(.hide) {
+  opacity: 1;
+}
+  .hide > * {
+  opacity: 0 !important;
+}
+  nav{
+    background: none;
+  }
+  
+}
